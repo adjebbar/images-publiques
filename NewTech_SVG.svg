@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1563" height="1006" viewBox="0 0 1563 1006">
+  <defs>
+    <linearGradient id="nBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1599ff"/>
+      <stop offset="0.38" stop-color="#063bdc"/>
+      <stop offset="0.72" stop-color="#0758ee"/>
+      <stop offset="1" stop-color="#16c5ef"/>
+    </linearGradient>
+    <linearGradient id="wordBlue" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#0b43dc"/>
+      <stop offset="0.48" stop-color="#064ff0"/>
+      <stop offset="1" stop-color="#0aa9f2"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".05"/>
+      <stop offset=".52" stop-color="#ffffff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="1563" height="1006" fill="#fff"/>
+
+  <!-- Clean geometric ribbon N -->
+  <g>
+    <!-- left upright -->
+    <path d="M328 39 H545 L836 376 H736 L466 225 V838 L328 707 Z" fill="url(#nBlue)"/>
+    <!-- central descending ribbon -->
+    <path d="M466 225 L836 376 L1249 893 H1017 L658 436 L466 225 Z" fill="url(#nBlue)"/>
+    <!-- right upright -->
+    <path d="M1094 157 L1249 39 V893 L1094 893 Z" fill="url(#nBlue)"/>
+    <!-- upper right facet -->
+    <path d="M1094 157 L1249 39 V225 L1094 356 Z" fill="#18bff0" opacity=".62"/>
+    <!-- lower/inner facet -->
+    <path d="M466 225 L658 436 L602 496 L466 365 Z" fill="#0a49e5" opacity=".55"/>
+    <!-- subtle highlight -->
+    <path d="M544 48 H568 L789 304 L765 321 Z" fill="url(#shine)" opacity=".9"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif"
+     font-size="245" font-weight="600" letter-spacing="-13">
+    <!-- outer white keyline -->
+    <text x="781.5" y="620" fill="url(#wordBlue)"
+          stroke="#ffffff" stroke-width="25" stroke-linejoin="round">NewTech</text>
+    <!-- crisp blue edge -->
+    <text x="781.5" y="620" fill="url(#wordBlue)"
+          stroke="#063bcf" stroke-width="7" stroke-linejoin="round">NewTech</text>
+    <!-- fine inner highlight -->
+    <text x="781.5" y="620" fill="url(#wordBlue)"
+          stroke="#dff8ff" stroke-width="2" stroke-linejoin="round">NewTech</text>
+  </g>
+</svg>
